@@ -1,4 +1,5 @@
 import './Pokemon.css'
+import PropTypes from 'prop-types'
 
 function Pokemon({ name, image }) {
     return(
@@ -10,5 +11,10 @@ function Pokemon({ name, image }) {
         </div>
     )
 }
+
+Pokemon.propTypes = {
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
+};
 
 export default Pokemon;
